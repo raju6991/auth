@@ -1,0 +1,249 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0044cc, #0066ff, #00aaff);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Floating abstract background shapes */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('../img/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Container centers the card */
+.container {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Make sure the card is above background shapes */
+}
+
+/* Glassmorphism card */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Form header */
+.cardHeader h1 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+/* Form content */
+.rform h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  color: rgba(30, 30, 30, 0.8);
+}
+
+input::placeholder {
+  color: rgba(30, 30, 30, 0.8);
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+/* Password wrapper */
+.passwordWrapper {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0 12px;
+  margin: 10px 0;
+}
+
+.passwordWrapper input {
+  flex: 1;
+  padding: 12px 8px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.passwordWrapper .toggle-password {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Links */
+.forgot {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  text-align: right;
+  color: #cce6ff;
+  text-decoration: none;
+}
+.forgot:hover {
+  color:#ccefff;
+}
+
+/* Sign in button */
+.signInBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #002366;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 16px;
+
+}
+
+.signInBtn:hover {
+  background: #002366;
+  opacity: 0.8;
+  transition: ease-in;
+}
+
+/* Social icons container */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 17px 0;
+}
+
+.icon {
+  background-color: #fff;
+  padding: 10px 40px;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+.icon:hover {
+  background-color: #fafafa;
+  opacity: 0.8;
+  transition: ease-in-out;
+}
+
+/* Footer */
+.notLogin {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.register {
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+

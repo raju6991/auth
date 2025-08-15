@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="card">
+        <div class="cardHeader">
+          <h1>Register</h1>
+          <form class="rorm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="John Doe" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="username@gmail.com" />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" />
+
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="Confirm Password"
+            />
+
+            <button type="submit" class="signInBtn">Create Account</button>
+
+            <div class="icon-container">
+              <div class="icon">
+                <img src="img/google.png" alt="Google" />
+              </div>
+              <div class="icon">
+                <img src="img/github.png" alt="GitHub" />
+              </div>
+              <div class="icon">
+                <img src="img/fb.png" alt="Facebook" />
+              </div>
+            </div>
+
+            <p class="notLogin">
+              Already have an account?
+              <a href="login.html" class="register">Sign In</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
